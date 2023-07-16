@@ -1,0 +1,48 @@
+#lang 파일만 번역이기에 미흡한 부분이 있을수도있습니다.  디스코드 : 짱구#walletfairy
+
+#깃헙이나 디스코드로 수정요청 줄수 찾아서 문의주면 수정해서 업로드 진행하겠습니다.
+# Use '&nl' to add a new line. Use '&' for color codes (e.g. '&4' for color red). For some messages you can use a placeholder (e.g. '%file%' for file name).
+# Minecraft color codes: https://htmlcolorcodes.com/minecraft-color-codes/
+
+Prefix: ""
+Command:
+  Zip:
+    Header: "압축 백업 중...&nl"
+    Footer: "&nl&nl백업 [%file%] 압축됨.&nl백업 [%file%] 저장됨."
+  Unzip:
+    Header: "압축 해제 중...&nl"
+    Footer: "&nl&nl백업 [%file%] 해제됨."
+  Reload: 설정이 다시 로드되었습니다.
+  Tasks:
+    Header: "----- 백업 작업 -----&nl"
+    Footer: "&nl----- 백업 작업 -----"
+  Shutdown:
+    Start: "백업 작업이 완료된 후 서버가 종료됩니다. (''/backup tasks''로 확인) 다시 이 명령어를 실행하여 종료를 취소할 수 있습니다."
+    Cancel: 종료가 취소되었습니다.
+Info:
+  BackupFinished: "백업 [%file%]이 저장되었습니다."
+  BackupStarted: "백업 [%file%]이 시작되었습니다."
+  BackupRemoved: "백업 [%file%]이 제거되었습니다."
+  FtpUpload: "FTP: 백업 [%file%] 업로드 중..."
+  FtpUploadSuccess: "FTP: 업로드 완료. 백업이 FTP 서버에 저장되었습니다."
+  FtpDownload: "FTP: 백업 [%file%] 다운로드 중..."
+  FtpDownloadSuccess: "FTP: 다운로드 완료. 백업이 FTP 서버에서 다운로드되었습니다."
+Error:
+  NoPermission: "&c죄송하지만, 이 명령어를 실행할 권한이 없습니다."
+  NoBackups: 백업이 없습니다.
+  NoBackupFound: "%file% 이(가)라는 이름의 백업을 찾을 수 없습니다."
+  NoBackupSearch: "%input% 에 대한 백업 검색 결과가 없습니다."
+  DeletionFailed: "%file%을(를) 삭제하는 중에 오류가 발생했습니다."
+  FolderExists: "%file%이(가) 이미 있는 폴더입니다."
+  ZipExists: "%file%.zip이(가) 이미 있는 ZIP 파일입니다."
+  NoFtpBackups: FTP 백업이 없습니다.
+  NoTasks: 실행 중인 백업 작업이 없습니다.
+  AlreadyZip: "%file%은(는) 이미 ZIP 파일입니다."
+  NotAZip: "%file%은(는) ZIP 파일이 아닙니다."
+  NotANumber: "%input%은(는) 유효한 숫자가 아닙니다."
+  BackupFailed: 백업 [%file%] 저장 중에 오류가 발생했습니다. 자세한 내용은 콘솔을 확인하세요.
+  FtpUploadFailed: "FTP: FTP 서버로 백업 업로드 중 오류가 발생했습니다. config.yml에서 서버 세부 정보를 확인하세요 (IP, 포트, 사용자, 비밀번호)."
+  FtpDownloadFailed: "FTP: FTP 서버에서 백업 다운로드 중 오류가 발생했습니다. config.yml에서 서버 세부 정보를 확인하세요 (IP, 포트, 사용자, 비밀번호)."
+  FtpLocalDeletionFailed: "FTP: 업로드된 파일을 FTP 서버에서 찾을 수 없어 로컬 백업 삭제에 실패했습니다. 다시 시도하세요."
+  FtpNotFound: "FTP: ftp-backup %file%을(를) 찾을 수 없습니다."
+  FtpConnectionFailed: "FTP: FTP 서버에 연결하는 중 오류가 발생했습니다."
